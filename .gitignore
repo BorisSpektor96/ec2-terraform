@@ -5,7 +5,7 @@
 # Ignore Terraform backup files
 *.tfstate.backup
 
-# Ignore any sensitive files
+# Ignore any sensitive files (e.g., SSH keys)
 *.pem
 *.key
 
@@ -15,5 +15,15 @@
 # Ignore specific Terraform variables files
 *.tfvars
 
+# Ignore Terraform provider files and directories
 .terraform/
-.terraform
+.terraform.lock.hcl
+
+# Ignore any log files created by Terraform
+*.log
+
+# Ignore crash logs
+crash.log
+
+# Ignore any temporary files
+*.bak
